@@ -88,7 +88,6 @@ Final-year **Electronics & Communication Engineering** student specializing in *
 
 | Achievement | Details |
 |-------------|---------|
-| 🎓 **Data Science with Python** | Code IT, 2026 |
 | 🥇 **Best Paper Award** | IEEE ICTP 2026 — AI & ML Track |
 | 🤝 **IEEE Volunteer** | ICTP 2026 Conference Operations |
 
