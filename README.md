@@ -28,7 +28,7 @@ Final-year **Electronics & Communication Engineering** student specializing in *
 <table>
 <tr>
 <td><strong>Languages</strong></td>
-<td><img src="https://www.python.org/?style=flat&logo=python&logoColor=white" /></td>
+<td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /></td>
 </tr>
 <tr>
 <td><strong>Machine Learning</strong></td>
