@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Anup Rai! 👋</h1>
-
+![Your Alt Text](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3hzZmo5M3FkbmMxaXI0NzBjZXdwNXNlcnBxNzVzMzdta3Yxanl2cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5SZbP8aVgl35XeGCHJ/giphy.gif)
 <p align="center">
   <strong>Bridging hardware and code 💡⚙️ From bits to bandwidth, I'm in.</strong>
 </p>
