@@ -1,6 +1,10 @@
 <h1 align="center">Hi, I'm Anup Rai! 👋</h1>
 
 <p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnp3NGs2bDdwM2xtZGF3YWdvcDZrcmo3NTN0a3IzM2Q4bXRwZ2xxYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Js7KV7VrQDYJagYooE/giphy.gif" alt="One Piece Luffy" width="300"/>
+</p>
+
+<p align="center">
   <strong>Bridging hardware and code 💡⚙️ From bits to bandwidth, I'm in.</strong>
 </p>
 
