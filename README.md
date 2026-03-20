@@ -1,6 +1,6 @@
 <h1 align="center">Hi, I'm Anup Rai! 👋</h1>
 
-<p align="center">
+<p align="left">
   <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZndvYW83azB0ZHVtdjFzbWcxbzhucjc2bHl1eDQzbWo1bG9pNWFsayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/a6511frde8xx22kwik/giphy.gif" alt="One Piece Luffy" width="300"/>
 </p>
 
