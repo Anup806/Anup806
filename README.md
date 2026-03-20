@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Anup Rai! 👋</h1>
 
 <p align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3hzZmo5M3FkbmMxaXI0NzBjZXdwNXNlcnBxNzVzMzdta3Yxanl2cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5SZbP8aVgl35XeGCHJ/giphy.gif" alt="One Piece Luffy" width="300"/>
+  <img src="[https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3hzZmo5M3FkbmMxaXI0NzBjZXdwNXNlcnBxNzVzMzdta3Yxanl2cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5SZbP8aVgl35XeGCHJ/giphy.gif](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGdqODFqZ2pvYm1zbmdjYnM4cWduNWdtaHU5ZWU1ZXl6dTh4YXRtbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rNtchZTL8RAtO/giphy.gif)" alt="One Piece Luffy" width="300"/>
 </p>
 
 <p align="center">
