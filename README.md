@@ -1,7 +1,5 @@
 <h1 align="center">Hi, I'm Anup Rai! 👋</h1>
-<p align="center">
-  <img src="https://media.tenor.com/videos/[GIF-ID]/media.gif" alt="One Piece Luffy" width="300"/>
-</p>
+
 <p align="center">
   <strong>Bridging hardware and code 💡⚙️ From bits to bandwidth, I'm in.</strong>
 </p>
