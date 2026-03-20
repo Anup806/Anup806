@@ -1,6 +1,6 @@
 <h1 align="center">Hi, I'm Anup Rai! 👋</h1>
 <p align="center">
-  <img src="[YOUR_GIF_URL_HERE](https://tenor.com/en-GB/view/one-piece-op-stare-luffy-point-gif-16034873797854288274)" alt="[Your Alt Text](https://tenor.com/en-GB/view/one-piece-op-stare-luffy-point-gif-16034873797854288274)" width="300"/>
+
 </p>
 <p align="center">
   <strong>Bridging hardware and code 💡⚙️ From bits to bandwidth, I'm in.</strong>
