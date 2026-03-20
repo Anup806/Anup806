@@ -1,6 +1,6 @@
 <h1 align="center">Hi, I'm Anup Rai! 👋</h1>
 
-<p align="centre">
+<p align="center">
   <strong>Bridging hardware and code 💡⚙️ From bits to bandwidth, I'm in.</strong>
 </p>
 
