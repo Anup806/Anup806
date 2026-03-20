@@ -1,8 +1,9 @@
 <h1 align="center">Hi, I'm Anup Rai! 👋</h1>
 
-<p align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGdqODFqZ2pvYm1zbmRjYnM4cWduNWdtaHU5ZWU1ZXl6dTh4YXRtbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rNtchZTL8RAtO/giphy.gif" alt="Profile GIF" width="300"/>
-</p>
+<div align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGdqODFqZ2pvYm1zbmRjYnM4cWduNWdtaHU5ZWU1ZXl6dTh4YXRtbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rNtchZTL8RAtO/giphy.gif" alt="Profile GIF" width="180" height="180" style="border-radius: 10px;"/>
+  
+
 
 <p align="center">
   <strong>Bridging hardware and code 💡⚙️ From bits to bandwidth, I'm in.</strong>
