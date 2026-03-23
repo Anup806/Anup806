@@ -84,6 +84,21 @@ Final-year **Electronics & Communication Engineering** student specializing in *
 
 ---
 
+## 🧠 MCQ Quiz — Test Your ML & CV Knowledge
+
+> **Can you ace a quiz on the topics I work with every day?**  
+> 10 multiple-choice questions covering Bayesian Knowledge Tracing, Deep Knowledge Tracing, MediaPipe, OpenCV, clustering, and more.
+
+<p align="center">
+  <a href="https://anup806.github.io/Anup806/mcq.html">
+    <img src="https://img.shields.io/badge/Launch%20Quiz-7C83FD?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Launch MCQ Quiz" />
+  </a>
+</p>
+
+**Topics covered:** BKT · DKT · K-Means · OpenCV · MediaPipe · PR-AUC · Overfitting · Mixed Reality · Supervised Learning
+
+---
+
 ## 🏆 Certifications & Honors
 
 | Achievement | Details |

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCQ Quiz — Anup Rai</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      max-width: 680px;
+      width: 100%;
+      padding: 40px 48px;
+      color: #e8eaf6;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #7c83fd, #96effd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header p {
+      font-size: 0.9rem;
+      color: #9fa8da;
+      margin-top: 6px;
+    }
+
+    /* Progress */
+    .progress-bar-bg {
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      height: 6px;
+      margin-bottom: 28px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #7c83fd, #96effd);
+      border-radius: 8px;
+      transition: width 0.4s ease;
+    }
+
+    .question-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #9fa8da;
+      margin-bottom: 10px;
+    }
+
+    .question-text {
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 24px;
+      color: #e8eaf6;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .option-btn {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      padding: 14px 18px;
+      color: #e8eaf6;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.2s, border-color 0.2s, transform 0.1s;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      background: rgba(124, 131, 253, 0.2);
+      border-color: #7c83fd;
+      transform: translateX(4px);
+    }
+
+    .option-btn .label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.1);
+      font-weight: 700;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .option-btn.correct {
+      background: rgba(72, 199, 142, 0.2);
+      border-color: #48c78e;
+      color: #afffdf;
+    }
+
+    .option-btn.correct .label { background: #48c78e; color: #0a3d2e; }
+
+    .option-btn.wrong {
+      background: rgba(241, 70, 104, 0.2);
+      border-color: #f14668;
+      color: #ffb3c1;
+    }
+
+    .option-btn.wrong .label { background: #f14668; color: #fff; }
+
+    .option-btn:disabled { cursor: not-allowed; }
+
+    .explanation {
+      background: rgba(124, 131, 253, 0.1);
+      border-left: 3px solid #7c83fd;
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 0.88rem;
+      color: #c5cae9;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .explanation.visible { display: block; }
+
+    .next-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #7c83fd, #96effd);
+      color: #0f0c29;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+
+    .next-btn:hover { opacity: 0.9; transform: scale(0.99); }
+    .next-btn:active { transform: scale(0.97); }
+
+    /* Result screen */
+    .result { text-align: center; }
+
+    .score-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #7c83fd, #96effd);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 30px rgba(124,131,253,0.4);
+    }
+
+    .score-circle .score-num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #0f0c29;
+      line-height: 1;
+    }
+
+    .score-circle .score-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #302b63;
+    }
+
+    .result h2 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+      background: linear-gradient(90deg, #7c83fd, #96effd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .result p {
+      font-size: 0.95rem;
+      color: #9fa8da;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+
+    .restart-btn {
+      display: inline-block;
+      padding: 12px 32px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #7c83fd, #96effd);
+      color: #0f0c29;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .restart-btn:hover { opacity: 0.88; }
+
+    @media (max-width: 520px) {
+      .card { padding: 28px 20px; }
+      .header h1 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="card" id="app">
+
+  <!-- Quiz screen -->
+  <div id="quiz-screen">
+    <div class="header">
+      <h1>🧠 ML &amp; CV Quiz</h1>
+      <p>Test your knowledge in Machine Learning &amp; Computer Vision</p>
+    </div>
+
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progress-fill"></div>
+    </div>
+
+    <div class="question-meta">
+      <span id="q-counter">Question 1 of 10</span>
+      <span id="score-tracker">Score: 0</span>
+    </div>
+
+    <p class="question-text" id="question-text"></p>
+
+    <div class="options" id="options-container"></div>
+
+    <div class="explanation" id="explanation"></div>
+
+    <button class="next-btn" id="next-btn" style="display:none;" onclick="nextQuestion()">Next →</button>
+  </div>
+
+  <!-- Result screen -->
+  <div id="result-screen" style="display:none;">
+    <div class="result">
+      <div class="score-circle">
+        <span class="score-num" id="final-score">0</span>
+        <span class="score-label">/ 10</span>
+      </div>
+      <h2 id="result-title">Well done!</h2>
+      <p id="result-desc"></p>
+      <button class="restart-btn" onclick="restartQuiz()">🔄 Restart Quiz</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const questions = [
+    {
+      q: "Which probabilistic model tracks a student's latent knowledge state over time to personalize learning?",
+      options: ["K-Means Clustering", "Bayesian Knowledge Tracing (BKT)", "Support Vector Machine", "Random Forest"],
+      answer: 1,
+      explain: "BKT (Bayesian Knowledge Tracing) models a student's knowledge as a hidden Markov model, estimating the probability that a skill has been mastered after each practice opportunity."
+    },
+    {
+      q: "In Deep Knowledge Tracing (DKT), which architecture is primarily used to model student learning sequences?",
+      options: ["Convolutional Neural Network (CNN)", "Decision Tree", "Recurrent Neural Network (RNN/LSTM)", "K-Nearest Neighbours"],
+      answer: 2,
+      explain: "DKT uses RNNs (typically LSTMs) to capture temporal dependencies in sequences of student interactions, predicting future performance on unseen skills."
+    },
+    {
+      q: "MediaPipe's hand landmark model detects how many key points per hand?",
+      options: ["10", "15", "21", "33"],
+      answer: 2,
+      explain: "MediaPipe Hands detects 21 3D hand landmarks per hand, covering the wrist, each finger's MCP/PIP/DIP/TIP joints, and the palm base."
+    },
+    {
+      q: "K-Means clustering requires you to specify which parameter in advance?",
+      options: ["The distance metric only", "The number of clusters (K)", "The feature scaling method", "The convergence threshold only"],
+      answer: 1,
+      explain: "K-Means requires K (the number of clusters) to be predefined. Methods like the Elbow Method or Silhouette Score help choose an appropriate K."
+    },
+    {
+      q: "In OpenCV, which function converts a BGR image to grayscale?",
+      options: ["cv2.COLOR_BGR2GRAY inside cv2.cvtColor()", "cv2.toGray()", "cv2.gray()", "cv2.convertColor()"],
+      answer: 0,
+      explain: "The correct call is cv2.cvtColor(image, cv2.COLOR_BGR2GRAY). OpenCV loads images in BGR order by default, so this flag correctly converts to single-channel grayscale."
+    },
+    {
+      q: "Which metric measures the area under the precision-recall curve, useful for imbalanced datasets?",
+      options: ["ROC-AUC", "F1-Score", "PR-AUC", "Mean Squared Error"],
+      answer: 2,
+      explain: "PR-AUC (Precision-Recall Area Under Curve) is especially informative for imbalanced datasets. Unlike ROC-AUC, it focuses on the performance for the positive (minority) class."
+    },
+    {
+      q: "In Mixed Reality (MR), which term describes the seamless blending of virtual objects with the real world in real time?",
+      options: ["Virtual Reality (VR)", "Augmented Reality (AR)", "Spatial Computing", "All of the above are synonyms"],
+      answer: 2,
+      explain: "Spatial Computing is the overarching term for technologies that merge digital and physical spaces. MR (Mixed Reality) is a specific form where virtual objects are anchored to and interact with real-world surfaces in real time."
+    },
+    {
+      q: "In the context of knowledge tracing, what does 'slip' refer to in BKT?",
+      options: [
+        "The probability of answering incorrectly despite knowing the skill",
+        "The probability of guessing correctly without knowing the skill",
+        "The learning gain after a practice opportunity",
+        "The initial probability of knowing a skill"
+      ],
+      answer: 0,
+      explain: "In BKT, 'slip' is the probability that a student who has mastered a skill will still answer incorrectly (e.g., due to carelessness). 'Guess' is the complementary parameter for correct answers without mastery."
+    },
+    {
+      q: "Which Python library provides pre-built pipelines for real-time face, hand, and pose detection?",
+      options: ["scikit-learn", "TensorFlow only", "MediaPipe", "Matplotlib"],
+      answer: 2,
+      explain: "MediaPipe (by Google) offers ready-to-use ML solutions for holistic body tracking, hands, face mesh, and more — optimized for real-time on-device inference across platforms."
+    },
+    {
+      q: "In supervised learning, what does 'overfitting' typically indicate?",
+      options: [
+        "The model performs well on both training and test data",
+        "The model is too simple to capture underlying patterns",
+        "The model memorizes training data but fails to generalize to unseen data",
+        "The model has too few parameters"
+      ],
+      answer: 2,
+      explain: "Overfitting happens when a model learns noise and specific patterns in the training set, leading to high training accuracy but poor performance on new, unseen data. Regularization, dropout, and cross-validation help mitigate it."
+    }
+  ];
+
+  const LABELS = ['A', 'B', 'C', 'D'];
+
+  let current = 0;
+  let score = 0;
+  let answered = false;
+
+  function loadQuestion() {
+    const q = questions[current];
+    const total = questions.length;
+
+    document.getElementById('q-counter').textContent = `Question ${current + 1} of ${total}`;
+    document.getElementById('score-tracker').textContent = `Score: ${score}`;
+    document.getElementById('progress-fill').style.width = `${(current / total) * 100}%`;
+    document.getElementById('question-text').textContent = q.q;
+
+    const container = document.getElementById('options-container');
+    container.innerHTML = '';
+
+    q.options.forEach((opt, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'option-btn';
+      btn.innerHTML = `<span class="label">${LABELS[i]}</span>${opt}`;
+      btn.onclick = () => selectAnswer(i);
+      container.appendChild(btn);
+    });
+
+    const expl = document.getElementById('explanation');
+    expl.textContent = '';
+    expl.classList.remove('visible');
+    document.getElementById('next-btn').style.display = 'none';
+    answered = false;
+  }
+
+  function selectAnswer(selected) {
+    if (answered) return;
+    answered = true;
+
+    const q = questions[current];
+    const btns = document.querySelectorAll('.option-btn');
+
+    btns.forEach((btn, i) => {
+      btn.disabled = true;
+      if (i === q.answer) btn.classList.add('correct');
+      else if (i === selected) btn.classList.add('wrong');
+    });
+
+    if (selected === q.answer) score++;
+
+    const expl = document.getElementById('explanation');
+    expl.textContent = '💡 ' + q.explain;
+    expl.classList.add('visible');
+
+    document.getElementById('score-tracker').textContent = `Score: ${score}`;
+    document.getElementById('next-btn').style.display = 'block';
+    document.getElementById('next-btn').textContent = current + 1 < questions.length ? 'Next →' : 'See Results';
+  }
+
+  function nextQuestion() {
+    current++;
+    if (current < questions.length) {
+      loadQuestion();
+    } else {
+      showResults();
+    }
+  }
+
+  function showResults() {
+    document.getElementById('quiz-screen').style.display = 'none';
+    const rs = document.getElementById('result-screen');
+    rs.style.display = 'block';
+
+    document.getElementById('final-score').textContent = score;
+
+    let title, desc;
+    const scorePercentage = score / questions.length;
+
+    if (scorePercentage === 1) {
+      title = '🏆 Perfect Score!';
+      desc = 'Outstanding! You nailed every question. Your ML &amp; CV knowledge is exceptional.';
+    } else if (scorePercentage >= 0.7) {
+      title = '🎉 Great Job!';
+      desc = `You scored ${score} out of ${questions.length}. Solid understanding of ML, Computer Vision, and Knowledge Tracing concepts!`;
+    } else if (scorePercentage >= 0.5) {
+      title = '👍 Good Effort!';
+      desc = `You scored ${score} out of ${questions.length}. Review the explanations above to strengthen the areas you missed.`;
+    } else {
+      title = '📚 Keep Learning!';
+      desc = `You scored ${score} out of ${questions.length}. Don't be discouraged — every expert was once a beginner. Check the explanations and try again!`;
+    }
+
+    document.getElementById('result-title').textContent = title;
+    document.getElementById('result-desc').textContent = desc;
+  }
+
+  function restartQuiz() {
+    current = 0;
+    score = 0;
+    answered = false;
+    document.getElementById('result-screen').style.display = 'none';
+    document.getElementById('quiz-screen').style.display = 'block';
+    loadQuestion();
+  }
+
+  // Initialise
+  loadQuestion();
+</script>
+</body>
+</html>
