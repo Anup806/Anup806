@@ -7,7 +7,6 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/anup-rai-095695343"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:raianup806@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="tel:+977-9827146720"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
   <img src="https://komarev.com/ghpvc/?username=Anup806&label=Profile%20views&color=0e75b6&style=for-the-badge" />
 </p>
 
@@ -55,7 +54,7 @@ Final-year **Electronics & Communication Engineering** student at Nepal Engineer
 </td>
 </tr>
 <tr>
-<td><strong>Knowledge Tracing</strong></td>
+<td><strong>Probabilistic Models</strong></td>
 <td>BKT (Bayesian Knowledge Tracing) · DKT (Deep Knowledge Tracing) · PC-BKT</td>
 </tr>
 <tr>
