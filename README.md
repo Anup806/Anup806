@@ -3,7 +3,7 @@
 
 <br/>
 
-<img align="right" alt="SpiderMan" width="350" src="./the-amazing-spiderman-2-tasm.gif"/>
+<img align="right" alt="SpiderMan" width="310" src="./the-amazing-spiderman-2-tasm.gif"/>
 
 - 🔭 &nbsp;Currently building on **Data Analytics + Adaptive ML Systems**
 
