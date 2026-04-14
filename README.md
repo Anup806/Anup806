@@ -3,17 +3,16 @@
 
 <br/>
 
-<img align="right" alt="Coding" width="360" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
+<img align="right" alt="SpiderMan" width="350" src="https://media1.tenor.com/m/1yY_d4npR_AAAAAd/the-amazing-spiderman-2-tasm.gif"/>
 
-- 🔭 &nbsp;Currently building on **Computer Vision + Adaptive ML Systems**
+- 🔭 &nbsp;Currently building on **Data Analytics + Adaptive ML Systems**
 
-- 🌱 &nbsp;Deepening my knowledge in **Deep Learning & MLOps**
 
 - 🏆 &nbsp;**IEEE Best Paper Award** — AI & ML Track, ICTP 2026
 
 - 🧠 &nbsp;Research focus: **Knowledge Tracing + AR/MR for adaptive education**
 
-- 🌐 &nbsp;Personal site: [anuprai806.com.np](https://anuprai806.com.np)
+- 🌐 &nbsp;Personal site: [anup806.github.io/portfolio-website/](https://anup806.github.io/portfolio-website/)
 
 - 📬 &nbsp;Reach me at: **raianup806@gmail.com**
 
@@ -70,11 +69,11 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+
 
 
 ---
-
+<!--
 ### 🔬 Featured Projects
 
 | Project | Description | Stack |
@@ -82,7 +81,7 @@
 | 🎓 **Inclusive MR Math Experience** | Gesture-controlled adaptive tutoring system with BKT for real-time mastery modeling | OpenCV · MediaPipe · Scikit-learn |
 | 📄 **LocalPDF-QA** | Fully offline PDF question-answering system using open-source LLMs | Python · Ollama · Retrieval QA |
 | 🖐️ **Hand Gesture Cube Controller** | Real-time hand tracking interface integrated with a Unity 3D environment | MediaPipe · Unity · C# |
-
+-->
 ---
 
 ### 📜 Research
