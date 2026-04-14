@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Anup Rai</h1>
-<h3 align="center">ECE Graduate · ML Researcher · Computer Vision Enthusiast from Nepal 🇳🇵</h3>
+<h3 align="center">ECE Graduate · ML Researcher · Data Analytic Enthusiast from Nepal 🇳🇵</h3>
 
 <br/>
 
