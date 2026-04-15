@@ -1,0 +1,170 @@
+"""
+MCQ Question Bank — Topics: Machine Learning, Computer Vision, and Electronics.
+Each question is a dict with keys: 'id', 'topic', 'question', 'options', 'answer', 'explanation'.
+"""
+
+QUESTIONS = [
+    {
+        "id": 1,
+        "topic": "Machine Learning",
+        "question": "Which algorithm is used in Bayesian Knowledge Tracing (BKT) to model student learning?",
+        "options": {
+            "A": "Hidden Markov Model",
+            "B": "Support Vector Machine",
+            "C": "Convolutional Neural Network",
+            "D": "Random Forest",
+        },
+        "answer": "A",
+        "explanation": (
+            "BKT uses a Hidden Markov Model (HMM) to represent the latent knowledge state "
+            "of a student as a binary variable (known/unknown) that evolves over time."
+        ),
+    },
+    {
+        "id": 2,
+        "topic": "Machine Learning",
+        "question": "In K-Means clustering, what does the algorithm minimise?",
+        "options": {
+            "A": "Cross-entropy loss",
+            "B": "Within-cluster sum of squared distances",
+            "C": "Between-cluster variance",
+            "D": "Gini impurity",
+        },
+        "answer": "B",
+        "explanation": (
+            "K-Means iteratively assigns points to their nearest centroid and updates "
+            "centroids to minimise the within-cluster sum of squared Euclidean distances (inertia)."
+        ),
+    },
+    {
+        "id": 3,
+        "topic": "Deep Learning",
+        "question": "Deep Knowledge Tracing (DKT) uses which type of neural network to model knowledge state?",
+        "options": {
+            "A": "Feedforward Neural Network",
+            "B": "Convolutional Neural Network",
+            "C": "Recurrent Neural Network (LSTM)",
+            "D": "Generative Adversarial Network",
+        },
+        "answer": "C",
+        "explanation": (
+            "DKT employs a Long Short-Term Memory (LSTM) network to capture temporal "
+            "dependencies in student response sequences and predict future performance."
+        ),
+    },
+    {
+        "id": 4,
+        "topic": "Computer Vision",
+        "question": "Which MediaPipe solution is primarily used for real-time hand-landmark detection?",
+        "options": {
+            "A": "MediaPipe Face Mesh",
+            "B": "MediaPipe Hands",
+            "C": "MediaPipe Pose",
+            "D": "MediaPipe Objectron",
+        },
+        "answer": "B",
+        "explanation": (
+            "MediaPipe Hands provides a pipeline that detects and tracks 21 3D hand landmarks "
+            "per hand in real time, enabling gesture-based interaction."
+        ),
+    },
+    {
+        "id": 5,
+        "topic": "Computer Vision",
+        "question": "What does the OpenCV function cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) do?",
+        "options": {
+            "A": "Converts a grayscale image to BGR",
+            "B": "Applies Gaussian blur to the image",
+            "C": "Converts a BGR colour image to grayscale",
+            "D": "Resizes the image to a fixed dimension",
+        },
+        "answer": "C",
+        "explanation": (
+            "cv2.cvtColor with the COLOR_BGR2GRAY flag converts a 3-channel BGR image "
+            "to a single-channel grayscale image using the standard luminosity formula."
+        ),
+    },
+    {
+        "id": 6,
+        "topic": "Machine Learning",
+        "question": "PR-AUC (Area Under the Precision-Recall Curve) is especially useful when:",
+        "options": {
+            "A": "The dataset is perfectly balanced",
+            "B": "Only recall matters for evaluation",
+            "C": "The positive class is rare (class imbalance)",
+            "D": "The model outputs discrete labels only",
+        },
+        "answer": "C",
+        "explanation": (
+            "PR-AUC is preferred over ROC-AUC for imbalanced datasets because it focuses "
+            "on the performance of the minority (positive) class without being skewed by "
+            "the large number of true negatives."
+        ),
+    },
+    {
+        "id": 7,
+        "topic": "Electronics",
+        "question": "In digital communications, what does the acronym ECE stand for?",
+        "options": {
+            "A": "Electrical and Computer Engineering",
+            "B": "Electronics and Communication Engineering",
+            "C": "Embedded and Control Engineering",
+            "D": "Electronic Circuit Evaluation",
+        },
+        "answer": "B",
+        "explanation": (
+            "ECE stands for Electronics and Communication Engineering, a discipline "
+            "combining electronic circuit design with communication systems and signal processing."
+        ),
+    },
+    {
+        "id": 8,
+        "topic": "Augmented Reality",
+        "question": "In an AR tutoring system, which rendering pipeline component overlays virtual content on the real world?",
+        "options": {
+            "A": "Physics engine",
+            "B": "Pose estimation and registration",
+            "C": "Audio mixer",
+            "D": "Shader compiler",
+        },
+        "answer": "B",
+        "explanation": (
+            "Pose estimation and registration tracks the camera's position and orientation "
+            "relative to real-world markers, enabling accurate overlay of virtual objects onto "
+            "the live camera feed."
+        ),
+    },
+    {
+        "id": 9,
+        "topic": "Machine Learning",
+        "question": "Which metric is defined as 2 × (Precision × Recall) / (Precision + Recall)?",
+        "options": {
+            "A": "Accuracy",
+            "B": "Specificity",
+            "C": "F1 Score",
+            "D": "Matthews Correlation Coefficient",
+        },
+        "answer": "C",
+        "explanation": (
+            "The F1 Score is the harmonic mean of Precision and Recall, providing a single "
+            "balanced measure that penalises extreme values in either metric."
+        ),
+    },
+    {
+        "id": 10,
+        "topic": "Computer Vision",
+        "question": "What is the primary role of a convolutional layer in a CNN?",
+        "options": {
+            "A": "Reduce overfitting by randomly dropping neurons",
+            "B": "Learn spatial feature maps via learnable filters",
+            "C": "Normalise pixel values to [0, 1]",
+            "D": "Flatten the input tensor into a 1-D vector",
+        },
+        "answer": "B",
+        "explanation": (
+            "A convolutional layer applies a set of learnable filters (kernels) across the "
+            "input, producing feature maps that capture local spatial patterns such as edges, "
+            "textures, and shapes."
+        ),
+    },
+]
