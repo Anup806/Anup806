@@ -17,7 +17,7 @@
 -->
 - 📬 &nbsp;Reach me at: **raianup806@gmail.com**
 
-- ⚡ &nbsp;Fun fact: I went from designing circuits to training ML models — and never looked back
+- ⚡ &nbsp;Fun fact: I went from designing circuits to training ML models and never looked back
 
 <br/>
 
