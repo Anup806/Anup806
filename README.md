@@ -9,7 +9,7 @@
 
 - 🌱 &nbsp;Deepening my knowledge in **Deep Learning & MLOps**
 
-- 🏆 &nbsp;**IEEE Best Paper Award** — AI & ML Track, ICTP 2026
+- 🏆 &nbsp;**IEEE Best Paper Award** AI & ML Track, ICTP 2026
 
 - 🧠 &nbsp;Research focus: **Knowledge Tracing + AR/MR for adaptive education**
 <!--
@@ -89,7 +89,7 @@
 ### 📜 Research
 
 > **DKT-Based AR Framework for Predictive Learning Assessment**
-> IEEE ICTP 2026 · 🏆 Best Paper Award — AI & ML Track
+> IEEE ICTP 2026 · 🏆 Best Paper Award - AI & ML Track
 > *Adaptive AR system using Deep Knowledge Tracing for real-world classroom deployment.*
 > `Accuracy: 0.84` &nbsp; `PR-AUC: 0.82`
 
