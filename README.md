@@ -113,7 +113,7 @@
   </a>
   -->
   &nbsp;
-  <a href="https:anuprai1.com.np" target="_blank">
+  <a href="https://anuprai1.com.np/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
   </a>
 </p>
