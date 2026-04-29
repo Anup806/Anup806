@@ -1,26 +1,28 @@
 <h1 align="center">Hi 👋, I'm Anup Rai</h1>
-<h3 align="center">ECE Graduate · ML Researcher · Data Analytics Enthusiast from Nepal 🇳🇵</h3>
-
+<h3 align="center">ECE Graduate · ML Engineer · LLM & Vision Systems Builder from Nepal 🇳🇵</h3>
+ 
 <br/>
-
+ 
 <img align="right" alt="Coding" width="350" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
-
-- 🔭 &nbsp;Currently building on **Data Analytics  + Adaptive ML Systems**
-
-- 🌱 &nbsp;Deepening my knowledge in **Deep Learning & MLOps**
-
-- 🏆 &nbsp;**IEEE Best Paper Award** AI & ML Track, ICTP 2026
-
-- 🧠 &nbsp;Research focus: **Knowledge Tracing + AR/MR for adaptive education**
+ 
+- 🔭 &nbsp;Currently building **RAG Pipelines, Adaptive ML Systems & Data Analytics Projects**
+ 
+- 🌱 &nbsp;Deepening my skills in **Deep Learning, MLOps & Production AI Systems**
+ 
+- 🏆 &nbsp;**IEEE Best Paper Award** — AI & ML Track, ICTP 2026
+ 
+- 🧠 &nbsp;Research: **Deep Knowledge Tracing (DKT) for Adaptive AR Learning Systems** · Accuracy: 0.84 · PR-AUC: 0.82
+ 
+- 🤖 &nbsp;Building with **· Ollama · Scikit-learn · OpenCV · MediaPipe · Streamlit**
 <!--
 - 🌐 &nbsp;Personal site: [anuprai806.com.np](https://anuprai806.com.np)
 -->
 - 📬 &nbsp;Reach me at: **raianup806@gmail.com**
-
-- ⚡ &nbsp;Fun fact: I went from designing circuits to training ML models and never looked back
-
+ 
+- ⚡ &nbsp;Fun fact: Went from designing analog circuits to building RAG pipelines and AR systems — the signal never stopped, just changed medium
+ 
 <br/>
-
+ 
 ---
 
 
