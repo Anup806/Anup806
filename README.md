@@ -87,18 +87,18 @@
 ---
 -->
 ### 📜 Research
-
+ 
 > **DKT-Based AR Framework for Predictive Learning Assessment**
 > IEEE ICTP 2026 · 🏆 Best Paper Award - AI & ML Track
 > *Adaptive AR system using Deep Knowledge Tracing for real-world classroom deployment.*
 > `Accuracy: 0.84` &nbsp; `PR-AUC: 0.82`
-
+>
+> 📄 [Read More →](https://ieeexplore.ieee.org/document/11485369)
 ---
-
+ 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Anup806&label=Profile+Views&color=0e75b6&style=flat" alt="Profile views"/>
 </p>
-
 
 ### 🤝 Connect with me
 
