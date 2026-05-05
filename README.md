@@ -68,15 +68,6 @@
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anup806&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Anup's GitHub Stats" height="165"/>
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anup806&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="165"/>
-</p>
-
----
 <!--
 ### 🔬 Featured Projects
 
