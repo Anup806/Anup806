@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Anup Rai</h1>
-<h3 align="center">ECE Graduate · ML Engineer · LLM & Vision Systems Builder from Nepal 🇳🇵</h3>
+<h3 align="center">ECE Graduate · Aspiring AI Engineerr · IEEE Best Paper Awardee..</h3>
  
 <br/>
  
@@ -13,7 +13,7 @@
  
 - 🧠 &nbsp;Research: **Deep Knowledge Tracing (DKT) for Adaptive AR Learning Systems** · Accuracy: 0.84 · PR-AUC: 0.82
  
-- 🤖 &nbsp;Building with **· Ollama · Scikit-learn · OpenCV · MediaPipe · Streamlit**
+- 🤖 &nbsp;Building with **· Ollama · Hugging · FaceLangChain · ChromaDB · OpenCV · MediaPipe · Streamlit**
 <!--
 - 🌐 &nbsp;Personal site: [anuprai806.com.np](https://anuprai806.com.np)
 -->
