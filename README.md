@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Anup Rai</h1>
-<h3 align="center">ECE Graduate · Aspiring AI Engineerr · IEEE Best Paper Awardee..</h3>
+<h3 align="center">ECE Graduate · Aspiring AI Engineer · IEEE Best Paper Awardee</h3>
  
 <br/>
  
@@ -13,7 +13,7 @@
  
 - 🧠 &nbsp;Research: **Deep Knowledge Tracing (DKT) for Adaptive AR Learning Systems** · Accuracy: 0.84 · PR-AUC: 0.82
  
-- 🤖 &nbsp;Building with **· Ollama · Hugging · FaceLangChain · ChromaDB · OpenCV · MediaPipe · Streamlit**
+- 🤖 &nbsp;Building with **Python · Ollama · Hugging Face · LangChain · ChromaDB · OpenCV · MediaPipe · Streamlit**
 <!--
 - 🌐 &nbsp;Personal site: [anuprai806.com.np](https://anuprai806.com.np)
 -->
@@ -28,17 +28,20 @@
 
 ### 🛠️ Languages & Tools
 
-**Programming**
+**Programming Languages**
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C"/>
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++"/>
+  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB"/>
 </p>
 
-**Machine Learning & Data**
+**Machine Learning**
 
 <p align="left">
+  <img src="https://img.shields.io/badge/Supervised Learning-FF6B6B?style=for-the-badge&logoColor=white" alt="Supervised Learning"/>
+  <img src="https://img.shields.io/badge/Unsupervised Learning-4ECDC4?style=for-the-badge&logoColor=white" alt="Unsupervised Learning"/>
   <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-learn"/>
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
@@ -51,19 +54,17 @@
   <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge&logo=google&logoColor=white" alt="MediaPipe"/>
 </p>
 
-**LLM & Local AI**
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama"/>
-</p>
-
-**Dev Tools & Platforms**
+**Tools & Platforms**
 
 <p align="left">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
-  <img src="https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab"/>
+  <img src="https://img.shields.io/badge/Google Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab"/>
   <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" alt="Unity"/>
+  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama"/>
+  <img src="https://img.shields.io/badge/Hugging Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face"/>
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logoColor=white" alt="LangChain"/>
+  <img src="https://img.shields.io/badge/ChromaDB-000000?style=for-the-badge&logoColor=white" alt="ChromaDB"/>
 </p>
 
 ---
